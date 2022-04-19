@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Gameria;
+    src: url(GAMERIA.woff2);
+}
+* {
+    font-family: Gameria;
+}
+
+html {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+}
+
+body {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

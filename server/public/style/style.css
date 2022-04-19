@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Gameria;
+    src: url(GAMERIA.woff2);
+}
+* {
+    font-family: Gameria;
+}
+
+html {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+.theGame {
+    flex: 2;
+}
+
+.chat {
+    margin-right: 20px;
+    /* height: 600px; */
+    max-height: 300px;
+}
+.messagesContainer {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+    background-color: white;
+    width: 233px;
+    height: 600px;
+    max-width: 233px;
+    max-height: 300px;
+    overflow: scroll;
+}
+.chat button {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 3px;
+    border: 0px;
+    font-size: 20px;
+    background-color: #6495ed;
+    color: white;
+}
+#messages {
+    list-style: none;
+}
+
+#field {
+    display: block;
+    margin: auto;
+    background-color: white;
+    border: 10px solid black;
+}
+
+h1 {
+    color: white;
+}
+
+div#controls {
+    text-align: center;
+    margin: 10px;
+    font-size: 40px;
+}
+
+#start {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #6495ed;
+    color: white;
+    padding: 5px;
+    padding-bottom: 0px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+#start:hover {
+    transform: scale(1.3);
+}
+
+#controls {
+    margin: 20px auto;
+    text-align: center;
+}
+#controls input {
+    font-size: 32px;
+}
+.bottomContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.score {
+    padding-top: 10px;
+    color: black;
+    font-size: 34px;
+    display: flex;
+    flex-direction: row;
+}
+#timer {
+    color: black;
+    font-size: 30px;
+}
+#player {
+    color: #29a5ed;
+}
+
+.hidden {
+    display: none;
+}
+.popup {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 7px;
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: #29a5ed;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -75px;
+}
+.popup a {
+    color: black;
+    left: 50%;
+    top: 40%;
+    margin-left: -30%;
+    font-size: 28px;
+    position: absolute;
+    transition: transform 0.2s;
+    text-decoration: none;
+    /* top: 50%; */
+}
+.popup a:hover {
+    transform: scale(1.3);
+    /* top: 50%; */
+}
+.popup a:visited {
+    text-decoration: none;
+}
+.popup #close {
+    margin-top: 5px;
+    position: relative;
+    left: 92%;
+    background: none;
+    border: 0px;
+    cursor: pointer;
+}
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.settings img {
+    width: 50px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.settings img:hover {
+    transform: scale(1.3);
+}
+.settings {
+    margin-top: 20px;
+}
+.right {
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+}
+.waiting {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 7px;
+    margin-top: 120px;
+    position: relative;
+    background-color: white;
+    height: 180px;
+    width: 233px;
+    max-height: 180px;
+    max-width: 233px;
+    overflow-y: scroll;
+}
+.waiting h4 {
+    margin-top: 5px;
+    margin-left: 5px;
+}

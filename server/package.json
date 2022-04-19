@@ -1,0 +1,25 @@
+{
+    "name": "pong",
+    "version": "1.0.0",
+    "description": "le célèbre jeu Pong",
+    "main": "main.js",
+    "type": "module",
+    "scripts": {
+        "build": "webpack",
+        "start": "nodemon main.js"
+    },
+    "author": "Zakaria et Yoni",
+    "license": "ISC",
+    "dependencies": {
+        "nodeman": "^1.1.2",
+        "socket.io": "^4.4.1"
+    },
+    "devDependencies": {
+        "copy-webpack-plugin": "^10.2.4",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.5.0",
+        "webpack": "^5.68.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.7.3"
+    }
+}
